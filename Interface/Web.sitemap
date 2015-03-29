@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode title="Root" description="(do not display)" url="~/">
+        <siteMapNode title="Home" description="Home" url="~/Default.aspx" />
+        <siteMapNode title="Admin Management" description=""
+            url="">
+            <siteMapNode title="Departments" description="Manage Departments"
+                url="~/Admin/ManageDepartment.aspx" />
+          <siteMapNode title="Tasks" description="Manage Tasks"
+                url="~/Admin/ManageTask.aspx" />
+            <siteMapNode title="Users" description="Manage User Accounts"
+                url="~/Admin/ManageEmployee.aspx" />
+            <siteMapNode title="Environment" description="Manage Environments"
+                url="~/Admin/ManageEnvironment.aspx" />
+            <siteMapNode title="Focus Area" description="Manage Focus Areas"
+                url="~/Admin/ManageFocusArea.aspx" />
+            <siteMapNode title="Performer" description="Manage Performers"
+                url="~/Admin/ManagePerformer.aspx" />
+            <siteMapNode title="Potential Hazards" description="Manage Potential Hazards"
+                url="~/Admin/ManagePotentialHazard.aspx" />
+        </siteMapNode>
+      
+        <siteMapNode title="Hazard Assessments" description=""
+            url="">
+            <siteMapNode title="New Hazard Assessment" description="Create a new Hazard Assessment"
+                url="~/HA/New.aspx" />
+            <siteMapNode title="Lookup Hazard Assessment" description="Look up an active Hazard Assessment"
+                url="~/Lookup.aspx" />
+        </siteMapNode>
+
+        <siteMapNode title="Search Hazard Assessments" description="Search Hazard Assessments" url="">
+          <siteMapNode title="By Program" description="search form by program"
+               url="~/SearchHAForm/HAFormByDepartment.aspx" />
+          <siteMapNode title="By Designate" description="search form by designate"
+               url="~/SearchHAForm/HAFormByEmployee.aspx" />
+          <siteMapNode title="By Environment" description="search form by environment"
+               url="~/SearchHAForm/HAFormByEnvironment.aspx" />
+          <siteMapNode title="By Focus Area" description="search form by focus area"
+              url="~/SearchHAForm/HAFormByFocusArea.aspx" />
+          <siteMapNode title="By Potential Hazard" description="search form by potential hazard"
+             url="~/SearchHAForm/HAFormByPotentialHazard.aspx" />
+          <siteMapNode title="By School" description="search form by school"
+             url="~/SearchHAForm/HAFormBySchool.aspx" />
+          <siteMapNode title="By Task" description="search form by task"
+             url="~/SearchHAForm/HAFormByTask.aspx" />
+        </siteMapNode>
+  
+        <siteMapNode title="Search Archived" description="Search Archived Hazard Assessments" url="~/About.aspx" />
+        </siteMapNode>
+</siteMap>
