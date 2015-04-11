@@ -57,17 +57,10 @@
     <Compile Include="BLL\EnvironController.cs" />
     <Compile Include="BLL\FocusAreaController.cs" />
     <Compile Include="BLL\HAController.cs" />
-    <Compile Include="BLL\SearchArchive.cs" />
-    <Compile Include="BLL\SearchHAFormByDepartmentController.cs" />
     <Compile Include="BLL\HazardTaskController.cs" />
     <Compile Include="BLL\PerformerController.cs" />
     <Compile Include="BLL\PotentialHazardController.cs" />
     <Compile Include="BLL\BusinessRuleException.cs" />
-    <Compile Include="BLL\searchHAFormByEmployeeController.cs" />
-    <Compile Include="BLL\SearchHAFormByEnvironmentController.cs" />
-    <Compile Include="BLL\SearchHAFormByFocusAreaController.cs" />
-    <Compile Include="BLL\SearchHAFormByPotentialHazardController.cs" />
-    <Compile Include="BLL\SearchHAFormByTaskController.cs" />
     <Compile Include="BLL\Security\RoleManager.cs" />
     <Compile Include="BLL\Security\SecurityController.cs" />
     <Compile Include="BLL\Security\UserManager.cs" />
@@ -90,6 +83,7 @@
     <Compile Include="Entities\Security\ApplicationUser.cs" />
     <Compile Include="Entities\Security\SecurityRoles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchArchiveByDg.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

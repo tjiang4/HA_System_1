@@ -34,6 +34,7 @@ namespace Engine.DAL
         public DbSet<HAEngineeringHazard> HAEngineeringHazards { get; set; }
         public DbSet<HAOtherHazard> HAOtherHazards { get; set; }
         public DbSet<HAssessments> HAssessment { get; set; }
+        
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

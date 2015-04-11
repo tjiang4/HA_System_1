@@ -17,19 +17,21 @@ namespace Engine.Entities.DTOs
         public int HazardAssessmentID { get; set; }
         public int FocusAreaID { get; set; }
         public string TaskName { get; set; }
-        public string CreatorFirstName { get; set; }
-        public string CreatorLastName { get; set; }
         public DateTime? SignOffDate { get; set; }
-        public string ApprovedBy { get; set; }
+        //public string ApprovedBy { get; set; }
         public string ModifiedDate { get; set; }
         public string FocusAreaName { get; set; }
+        public string PotentialHazardName { get; set; }
+        //public string School { get; set; }
+        public string EnvironmentName { get; set; }
+        public string EmployeeType { get; set; }
+        public string TaskAssessedName { get; set; }
+        public string DepartmentName { get; set; }
+        public string ControlMeasureName { get; set; }
+        public string Type { get; set; }
+        public string Status { get; set; }
+        public DateTime? CreationDate { get; set; }
+        public string Comments { get; set; }
         
-        public string FullName
-        {
-            get
-            {
-                return string.Format("{0},{1}", CreatorLastName, CreatorFirstName);
-            }
-        }
     }
 }

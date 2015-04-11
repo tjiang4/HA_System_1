@@ -23,11 +23,11 @@ namespace Engine.Entities
         public string Defination { get; set; }
         [Required(ErrorMessage = "School is a required field.")]
         [StringLength(100, ErrorMessage = "School maximum size 100 characters")]
-        public string School { get; set; }
-        public int? ExposureLevel { get; set; }
-        public int? ProbabilityLevel { get; set; }
-        public int? SeverityLevel { get; set; }
-        public int? Total { get; set; }
+        //public string School { get; set; }
+        //public int? ExposureLevel { get; set; }
+        //public int? ProbabilityLevel { get; set; }
+        //public int? SeverityLevel { get; set; }
+        //public int? Total { get; set; }
 
         public string CreatorFirstName { get; set; }
         public string CreatorLastName { get; set; }
@@ -36,10 +36,11 @@ namespace Engine.Entities
         public int EnvironmentID { get; set; }
         public int PotentialHazardsID { get; set; }
         public int TaskID { get; set; }
-        public int TaskAssessedID { get; set; }
+        public DateTime? CreationDate { get; set; }
+        public string Comments { get; set; }
         public string ApprovedBy { get; set; }
-
+        public string Archived { get; set; }
         public string ModifiedDate { get; set; }
-        public string Commets { get; set; }
+
     }
 }

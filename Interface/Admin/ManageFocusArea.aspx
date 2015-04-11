@@ -5,32 +5,30 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
     <uc1:MessageUserControl runat="server" ID="MessageUserControl" />
 
-     <h1>Manage Focus Areas</h1>
+     <h1 class="adminTitle">Manage Focus Areas</h1>
     <%--<input id="Create" type="button" value="Create a Department" /> &nbsp; &nbsp; <input id="Update" type="button" value="Lookup a Department" /> --%>
 
        <table>
         <tr>
-            <td><asp:DropDownList ID="FocusAreasDropDown" runat="server" Width="300px" DataSourceID="FocusAreasODS" DataTextField="FocusAreaName" DataValueField="FocusAreaID">
-                <asp:ListItem Enabled="False" Selected="True" Value="0">Please select Focus area</asp:ListItem>
-                </asp:DropDownList></td>
-            <td><asp:Button ID="LookupFocusAreaButton" runat="server" Text="Lookup" OnClick="LookupFocusAreatButton_Click" /></td>
+            <td style="width: 388px">s</td>
+            <td><asp:Button CssClass="btn-default" ID="LookupFocusAreaButton" runat="server" Text="Lookup" OnClick="LookupFocusAreatButton_Click" Width="190px" /></td>
         </tr>
        </table>
     <br />
       <table>
         <tr>
-            <td> <asp:TextBox ID="FocusAreaIDTextBox" runat="server" Visible="false"></asp:TextBox></td>
+            <td style="width: 389px"> <asp:TextBox ID="FocusAreaIDTextBox" runat="server" Visible="false"></asp:TextBox></td>
         </tr>
         <tr>
-            <td><asp:Label ID="Label2" runat="server" Text="FocusArea Name:"></asp:Label></td>
-            <td><asp:TextBox ID="FocusAreaNameTextBox" runat="server"></asp:TextBox> </td>
+            <td style="width: 389px"><asp:Label ID="Label2" runat="server" Text="FocusArea Name:"></asp:Label></td>
+            <td><asp:TextBox ID="FocusAreaNameTextBox" runat="server" Width="190px"></asp:TextBox> </td>
         </tr>
 
         <tr>
-            <td><asp:Label ID="Label3" runat="server" Text="Status:"></asp:Label>
+            <td style="width: 389px"><asp:Label ID="Label3" runat="server" Text="Status:"></asp:Label>
             </td>
             <td>
-                <asp:DropDownList ID="ActiveDropDown" runat="server" DataTextField="Active_YN" DataValueField="Active_YN">
+                <asp:DropDownList ID="ActiveDropDown" runat="server" DataTextField="Active_YN" DataValueField="Active_YN" Height="22px" Width="190px">
                 <asp:ListItem Value="Y">Active</asp:ListItem>
                 <asp:ListItem Value="N">Inactive</asp:ListItem>
                 </asp:DropDownList> 
@@ -42,8 +40,8 @@
 
         </table>
     <br /> 
-    <asp:Button ID="AddFocusAreaButton" runat="server" Text="Create FocusArea" OnClick="AddFocusAreaButton_Click" />   
-    <asp:Button ID="UpdateFocusAreaButton" runat="server" Text="Update FocusArea" OnClick="UpdateFocusAreaButton_Click" />
+    <asp:Button CssClass="btn-primary" ID="AddFocusAreaButton" runat="server" Text="Create FocusArea" OnClick="AddFocusAreaButton_Click" Height="35px" Width="190px" />   
+    <asp:Button CssClass="btn-primary" ID="UpdateFocusAreaButton" runat="server" Text="Update FocusArea" OnClick="UpdateFocusAreaButton_Click" Height="35px" Width="190px" />
 
 
 
